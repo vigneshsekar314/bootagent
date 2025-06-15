@@ -16,18 +16,22 @@ class TestGetFilesInfo(TestCase):
 
     def test_cur_dir(self):
         result = get_files_info("calculator",".")
+        print(result)
         self.assertTrue(not result.startswith("Error:"))
 
     def test_pkg_dir(self):
         result = get_files_info("calculator","pkg")
+        print(result)
         self.assertTrue(not result.startswith("Error:"))
 
     def test_bin_dir(self):
         result = get_files_info("calculator","/bin")
+        print(result)
         self.assertTrue(result.startswith("Error:"))
 
     def test_par_dir(self):
         result = get_files_info("calculator","../")
+        print(result)
         self.assertTrue(result.startswith("Error:"))
 
 

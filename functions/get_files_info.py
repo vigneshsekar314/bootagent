@@ -37,4 +37,4 @@ def get_files_info(working_directory: str, directory: str | None = None):
 
 def frame_string(name: str, size: int, is_dir: bool):
     # print(f"- {name}: file_size={size} bytes, isdir={is_dir}")
-    return f"- {name}: file_size={size} bytes, isdir={is_dir}"
+    return f"- {name}: file_size={size} bytes, is_dir={is_dir}"
